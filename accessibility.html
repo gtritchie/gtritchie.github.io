@@ -20,6 +20,7 @@
         <li><a href="#motion_h">Reduced Motion</a></li>
         <li><a href="#simplify_h">Simplify Layout</a></li>
         <li><a href="#reader_h">Screen Reader</a></li>
+        <li><a href="#menu_h">Accessibility Menu</a></li>
         <li><a href="#options_h">Accessibility Options</a></li>
         <li><a href="#resources_h">Other Resources</a></li>
       </ol>
@@ -95,11 +96,14 @@
         your operating system. For example, on Microsoft Windows, Alt+F will open the file menu.</p>
       <p>
         RStudio Server, however, has slightly different shortcuts for activating its main menu items. As a starting
-        point, on Windows and Linux, use Alt+Shift+F to activate the File menu, or Alt+Shift+H for the Help menu. Once
-        a menu is opened, use the left and right arrows keys to move between menus, and up and down arrows to navigate
-        within the current menu, just like on RStudio Desktop. A full list of Main Menu shortcuts is available in the
-        Help / Keyboard Shortcuts reference. If you wish to customize these shortcuts, they are named "Show File Menu",
-        "Show Help Menu", and so on.</p>
+        point, on Windows and Linux, use Alt+Shift+F to activate the File menu, or Alt+Shift+H for the Help menu. On
+        macOS, use Control+Option+F and Control+Option+H. Once a menu is open, use the left and right arrow keys to
+        move between menus, and up and down arrows to navigate within the current menu, just like on RStudio Desktop.</p>
+      <p>
+        A full list of Main Menu shortcuts is available in the Help / Keyboard Shortcuts reference, under the title
+        "Main Menu (Server)".</p>
+      <p>
+        If you wish to customize these shortcuts, they are named "Show File Menu", "Show Help Menu", and so on.</p>
       <h3>
         Navigating Dialog Boxes</h3>
       <p>
@@ -118,13 +122,18 @@
         quadrants each potentially containing many different types of tabs which in turn contain RStudio's many 
         features! Additionally, some features will open entirely new windows.</p>
       <p>
-        We recognize that this is overwhelming when first learning to use RStudio, and potentially distracting even if
-        you are experienced with the product. Unfortunately there are limitations to simplifying the UI in current
-        versions of the product. That said, there are some things you can try.</p>
+        This can be overwhelming when first learning to use RStudio, and potentially distracting even if
+        you are experienced with the product. Here are some things you can try.</p>
+      <h3>
+        Hiding toolbar</h3>
+      <p>
+        If you are not going to use it, the main toolbar can be hidden via Tools / Hide Toolbar, and redisplayed with
+        Tools / Show Toolbar.
+      </p>
       <h3>
         Zooming a Region</h3>
       <p>
-        One strategy you can employ is to "zoom" the region you are currently using. For example,
+        A strategy you can employ is to "zoom" the region you are currently using. For example,
         View / Panes / Zoom Console will cause the Console to fill the entire RStudio Window. Note this is a different
         meaning of "Zoom" than was mentioned earlier in this document where it referred to changing the overall size
         of all elements in the window.</p>
@@ -149,19 +158,62 @@
         The Source and Console quadrants are currently fixed in terms of what tab-types may appear in them. You can,
         however, configure the other two quadrants to hold specific tabs. The only limitation is that a quadrant must
         contain at least one tab, so it is not possible to completely eliminate one quadrant. Still, you can move the
-        tabs you don't routinely use into one quadrant then minimize that quadrant, give what is essentially a 3
+        tabs you don't routinely use into one quadrant then minimize that quadrant, giving what is essentially a 3
         panel layout.</p>
 
       <h2 id="reader_h">Screen Reader</h2>
       <p>Please see the <a href="https://support.rstudio.com/hc/en-us/articles/360045612413-RStudio-Screen-Reader-Support">
         article on RStudio Screen Reader support</a> for details on using the RStudio IDE with a screen reader.</p>
 
+      <h2 id="menu_h">Accessibility Menu</h2>
+      <p>
+        Several accessibility-related options are available under the Help / Accessibility menu:</p>
+
+      <table aria-labelledby="menu_h">
+        <thead><tr><th scope="col">Command</th><th scope="col">Description</th></tr></thead>
+        <tbody>
+        <tr>
+          <td>Screen Reader Support</td>
+          <td>Toggles screen reader support mode on and off; requires RStudio to restart</td>
+        </tr>
+        <tr>
+          <td>Speak Text Editor Location</td>
+          <td>Announce details on current text editor cursor location (RStudio Server with screen reader only)</td>
+        </tr>
+        <tr>
+          <td>Focus Console Output</td>
+          <td>Move keyboard focus to the Console output region, primarily for screen reader users</td>
+        </tr>
+        <tr>
+          <td>Focus Main Toolbar</td>
+          <td>Move keyboard focus to the main toolbar</td>
+        </tr>
+        <tr>
+          <td>Tab Key Always Moves Focus</td>
+          <td>Toggles a mode where the Tab key will always move focus to the next element, even when in a text editing
+          control.</td>
+        </tr>
+        <tr>
+          <td>Accessibility Options</td>
+          <td>Display the Global Options dialog and automatically open the Accessibility pane.</td>
+        </tr>
+        <tr>
+          <td>Accessibility Help</td>
+          <td>Opens this web page</td>
+        </tr>
+        </tbody>
+      </table>
+
       <h2 id="options_h">Accessibility Options</h2>
       <p>
-        Discussion of accessibility options dialog
-      </p>
+        The Global Options dialog contains a section dedicated to accessibility options. Options for reducing
+        motion in the user interface, and for toggling the Tab key to always move focus, were mentioned earlier in 
+        this article. The rest of the options are specific to screen reader usage, and are discussed in the
+        <a href="https://support.rstudio.com/hc/en-us/articles/360045612413-RStudio-Screen-Reader-Support">
+        article on RStudio Screen Reader support</a>.</p>
 
       <h2 id="resources_h">Resources</h2>
+      <p>Here are some additional resources related to RStudio accessibility, and accessibility of the R ecosystem.</p>
       <ul>
         <li><a href="https://blog.rstudio.com/2020/03/04/rstudio-1-3-preview-accessibility/">
           RStudio Blog: 1.3 Preview Accessibility</a></li>
