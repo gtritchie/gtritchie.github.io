@@ -1,0 +1,15 @@
+.navh {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+}
+.navh li {
+  float: left;
+}
+
+.navh a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}

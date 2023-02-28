@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
-  <title>Home Page - Boring by Design</title>
+  <title>Digital Accessibility - Boring by Design</title>
 </head>
 <body>
 <header>
 <nav aria-label="Site">
   <ul aria-label="Navigation" class="navh">
-    <li><a aria-current="page" href="index.html">[Home]</a></li>
-    <li><a href="a11y.html">Digital Accessibility</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a aria-current="page" href="a11y.html">[Digital Accessibility]</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
-<hr role="none">
+  <hr role="none">
 </nav>
 </header>
 <main>
-<h1>Introduction</h1>
-<p>Gary's website. Marvel at the splendour.</p>
+<h1 id="resh">Accessibility Resources</h1>
+<ul aria-labelledby="resh">
+  <li><a href="bookmarklets.html">Bookmarklets</a></li>
+</ul>
 </main>
 <footer>
   <hr role="none">
