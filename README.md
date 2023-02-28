@@ -1,3 +1,3 @@
 # gtritchie.github.io
 
-Just a website.
+Website playground.
