@@ -20,7 +20,7 @@
 <h1 id="a11yh">Accessibility Bookmarklets</h1>
 <p>Usage: add bookmarklets to browser favourites.</p>
 <ul aria-labelledby="a11yh">
-  <li><a href="javascript:(function(){document.getElementsByTagName('body')[0].style.pointerEvents='none';addEventListener('mousedown',(e)=>{e.preventDefault();return false;});}());">Disable Mouse on Current Page</a></li>
+  <li><a href="javascript:(function(){document.getElementsByTagName('body')[0].style.pointerEvents='none';addEventListener('contextmenu',(e)=>{e.preventDefault();return false;});addEventListener('mousedown',(e)=>{e.preventDefault();return false;});}());">Disable Mouse on Current Page</a></li>
 </ul>
 </main>
 <footer>
