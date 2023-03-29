@@ -20,6 +20,13 @@
 <main>
 <h1>Introduction</h1>
 <p>This page contains random tinkering with HTML, CSS, and JavaScript.</p>
+<h2 id="hfoo">Checkbox Labels</h2>
+<ul aria-labelledby="hfoo">
+  <li><label><input type="checkbox">Checkbox nested in a label</label></li>
+  <li><input id="foo" type="checkbox"><label for="foo">Checkbox associated with label using <code>for</code></label></li>
+  <li><input aria-labelledby="bar" type="checkbox"><span id="bar">Checkbox using <code>aria-labelledby</code></span></li>
+  <li><input aria-label="Checkbox using aria-label" type="checkbox"><span>Checkbox using <code>aria-label</code></span></li>
+</ul>
 </main>
 <footer>
   <hr role="none">
