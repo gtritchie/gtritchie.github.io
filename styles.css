@@ -13,3 +13,7 @@
   text-align: center;
   padding: 14px 16px;
 }
+
+.no-bullets {
+  list-style-type: none;
+}
