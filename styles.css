@@ -17,3 +17,7 @@
 .no-bullets {
   list-style-type: none;
 }
+
+:focus-visible {
+  outline: 2px solid blue;
+}
