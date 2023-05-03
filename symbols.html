@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <title>Accessibility Experiments - Boring by Design</title>
+  <title>Symbols - Boring by Design</title>
 </head>
 <body>
 <header>
@@ -18,15 +18,16 @@
 </nav>
 </header>
 <main>
-<h1>Introduction</h1>
-<p>This page contains random tinkering with HTML, CSS, and JavaScript.</p>
-<h2 id="checkboxes">Checkbox Labels</h2>
-<ul aria-labelledby="checkboxes">
-  <li><label><input type="checkbox">Checkbox nested in a label</label></li>
-  <li><input id="foo" type="checkbox"><label for="foo">Checkbox associated with label using <code>for</code></label></li>
-  <li><input aria-labelledby="bar" type="checkbox"><span id="bar">Checkbox using <code>aria-labelledby</code></span></li>
-  <li><input aria-label="Checkbox using aria-label" type="checkbox"><span>Checkbox using <code>aria-label</code></span></li>
-</ul>
+<h1>Screen Reader Support for Assorted Symbols</h1>
+<p>When using special characters on a web page, it's important to know how they will be presented
+   to a screen reader user.</p>
+<h2>Keyboard Shortcut Symbols</h2>
+<p>⇧</p>
+<p>⌘</p>
+<p>⌃</p>
+<p>⌥</p>
+<h2>Assorted</h2>
+<p>©</p>
 </main>
 <footer>
   <hr role="none">
