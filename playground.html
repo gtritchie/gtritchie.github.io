@@ -20,44 +20,52 @@
 <main>
 <h1>Introduction</h1>
 <p>This page contains random tinkering with HTML, CSS, and JavaScript.</p>
-<h2>Links</h2>
-<div><div>
-<a href="https://www.microsoft.com">Microsoft</a>
-<a href="https://www.apple.com">Apple</a>
-</div></div>
-<!-- <label for="pet-select">Choose a pet:</label> -->
+<h2>Random Focusable Things</h2>
+<button>This Does Nothing</button><br/>
+<label for="theText">Name: </label>
+<input id="theText" type="text"/>
 
-<div role="list" aria-title="History">
-  <div role="listitem">
-    <button>One</button>
-  </div>
-  <div role="listitem">
-    <button>Two</button>
-  </div>
-  <div role="listitem">
-    <button>Three</button>
-  </div>
-  <div role="listitem">
-    <button>Four</button>
-  </div>
-  <div role="listitem">
-    <button>Five</button>
-  </div>
-  <div role="listitem">
-    <button>Six</button>
-  </div>
-</div>
+<h2>Modal Dialogs</h2>
+
+<button id="showNativeDialog">Show HTML5 Dialog</button>
 
 </main>
 <footer>
   <hr role="none">
   <a href="sitemap.html">Site Map</a>
 </footer>
-  <script>
-    const button = document.getElementById("pressme");
-    button.addEventListener("click", function() {
-      alert("Button clicked!");
-    });
-  </script>
+
+<dialog id="nativeDialog">
+  <h3 autofocus tabindex="-1">Native HTML 5 Dialog</h3>
+  <p>
+    <label>
+      Pet:
+      <select>
+        <option value="default">Choose…</option>
+        <option>Cat</option>
+        <option>Dog</option>
+        <option>Camel</option>
+      </select>
+    </label>
+  </p>
+  <div>
+    <button id="nativeDialogClose">Close</button>
+  </div>
+</dialog>
+
+<script>
+  const nativeDialog = document.getElementById("nativeDialog");
+  const showNativeButton = document.getElementById("showNativeDialog");
+  const closeNativeButton = document.getElementById("nativeDialogClose");
+
+  showNativeButton.addEventListener("click", () => {
+    nativeDialog.showModal();
+  });
+
+  nativeDialogClose.addEventListener("click", () => {
+    nativeDialog.close();
+  });
+
+</script>
 </body>
 </html>
