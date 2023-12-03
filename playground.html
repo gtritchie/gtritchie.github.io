@@ -21,74 +21,19 @@
 <h1>Introduction</h1>
 <p>This page contains random tinkering with HTML, CSS, and JavaScript.</p>
 
-<h2>Update Title</h2>
-<button id="changeTitleButton">Change Title</button>
-
-<h2>Random Focusable Things</h2>
-<button>This Does Nothing</button><br>
-<label for="theText">Name: </label>
-<input id="theText" type="text">
-
-<h2>Compound Buttons</h2>
-<div tabindex="0" role="button">
-  <div class="action-bar-button-face" style="padding: 0px 2px;">
-    <div class="action-bar-button-icon codicon codicon-positron-new"></div>
-    <div class="action-bar-button-text" style="max-width: none;">New</div>
-    <div class="action-bar-button-drop-down-arrow codicon codicon-positron-drop-down-arrow"></div>
-  </div>
-</div>
-
-<h2>Checkboxes</h2>
-<input type="checkbox" id="cb1" name="cb1" value="cb1">
-<label for="cb1">Checkbox 1</label><br>
-<input aria-labelledby="foo" type="checkbox" id="cb2" name="cb2" value="cb2">
-<span id="foo">Checkbox 2</span><br>
-<input aria-label="Checkbox 3" type="checkbox" id="cb3" name="cb3" value="cb3">
-<span>Checkbox 3</span><br>
-<h2>Modal Dialogs</h2>
-
-<button id="showNativeDialog">Show HTML5 Dialog</button>
-
+<h2>Image Links</h2>
+<p>Aria label on anchor, alt-text on image</p>
+<a aria-label="Go to Posit Website" href="https://posit.co"><img alt="Posit Logo" src="posit-logo.png"></a>
+<p>Aria label on anchor, blank alt-text on image</p>
+<a aria-label="Go to Posit Website" href="https://posit.co"><img alt="" src="posit-logo.png"></a>
+<p>No aria label on anchor, alt-text on image</p>
+<a href="https://posit.co"><img alt="Posit Logo" src="posit-logo.png"></a>
 </main>
 <footer>
   <hr role="none">
   <a href="sitemap.html">Site Map</a>
 </footer>
-
-<dialog id="nativeDialog">
-  <h3 autofocus tabindex="-1">Native HTML 5 Dialog</h3>
-  <p>
-    <label>
-      Pet:
-      <select>
-        <option value="default">Choose…</option>
-        <option>Cat</option>
-        <option>Dog</option>
-        <option>Camel</option>
-      </select>
-    </label>
-  </p>
-  <div>
-    <button id="nativeDialogClose">Close</button>
-  </div>
-</dialog>
-
 <script>
-  const nativeDialog = document.getElementById("nativeDialog");
-  const showNativeButton = document.getElementById("showNativeDialog");
-  const closeNativeButton = document.getElementById("nativeDialogClose");
-  const changeTitleButton = document.getElementById("changeTitleButton");
-
-  showNativeButton.addEventListener("click", () => {
-    nativeDialog.showModal();
-  });
-
-  nativeDialogClose.addEventListener("click", () => {
-    nativeDialog.close();
-  });
-  changeTitleButton.addEventListener("click", function () {
-            document.title = "Hello World";
-  });
 </script>
 </body>
 </html>
